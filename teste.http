@@ -1,0 +1,31 @@
+### Criar uma UF
+POST http://localhost:3000/ufs
+Content-Type: application/json
+
+{
+  "nome": "Rio de Janeiro",
+  "sigla": "RJ"
+}
+
+### Listar todas as UFs
+GET http://localhost:3000/ufs
+
+### Criar uma Cidade (precisa de UF já criada)
+POST http://localhost:3000/cidades
+Content-Type: application/json
+
+{
+  "nome": "Manaus",
+  "ufId": 1
+}
+
+### Criar um Estudante (precisa de cidade já criada)
+POST http://localhost:3000/estudantes
+Content-Type: application/json
+
+{
+  "nome": "De Arrascaeta",
+  "matricula": "20250001",
+  "dt_nascimento": "2004-11-30",
+  "cidadeId": 1
+}
