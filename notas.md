@@ -2,8 +2,6 @@
 
 ## Dependências a serem instaladas no terminal do VS Code (bash)
 
-cd nest-js
-
 npm install --save @nestjs/typeorm typeorm sqlite3
 
 npm install --save class-validator class-transformer
